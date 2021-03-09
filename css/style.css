@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+@font-face{
+    src: url(/fonts/Rajdhani-Medium.ttf);
+    font-family: "radjdhani";
+    
+}
+
+@font-face{
+    src: url(/fonts/DancingScript-Regular.ttf);
+    font-family: 'dancing';
+}
+
+/*HEADER*/
+
+.container{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: rgb(250, 221, 244);
+    padding: 10px 2% ;
+}
+
+.logo1{
+    background-image: url('../images/logo.png');
+    background-size: 200% 250%;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+    width: 100px;
+    height: 70px;
+}
+
+.logo2{
+    background-image: url('../images/logo.png');
+    background-size: 200% 250%;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: right;
+    width: 100px;
+    height: 70px;
+}
+
+@media screen and (max-width:960px) {
+    .bg{
+        text-align: center;
+    }
+
+    .form-container{
+        position: static;
+        display: inline-block;
+        width: 96%;
+        max-width: 400px;
+    }
+
+    .form-container input[type=submit]{
+        position: absolute;
+        bottom: 7px;
+        left: 10px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .logo1,.logo2{
+        float: none;
+        display: inline-block;
+        margin-top: 10px;
+    }
+    header{
+        text-align: center;
+    }
+}
+
+/*FIM HEADER*/
+
+section.cover-form{
+    width: 100%;
+    padding: 0;
+    
+}
+
+.bg{
+    background-image: url('../images/banner.jpg');
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    opacity: 90%;
+}
+
+.form-container{
+    float: right;
+    width: 400px;
+    height: 80%;
+    background-color: white;
+    margin-right: 40px;
+    margin-top: 100px;
+    position: relative;
+    top: -5%;
+    border: rgb(146, 143, 143) 4px solid;
+    box-shadow: rgb(73, 73, 73) 2px 2px 4px 3px;
+    transition: 2s;
+}
+
+.form-container:hover{
+    transform: scale(1.1);
+}
+
+.form-container h2 {
+    background-color: rgb(230, 229, 228);
+    padding: 25px;
+    font-family: "radjdhani";
+    color: black;
+    font-size: 18px;
+    border-bottom: rgb(170, 169, 169) solid 2px;
+}
+
+
+.form-container form{
+    margin-top: 8px;
+    padding: 20px;
+}
+
+.form-container form input[type=text]{
+    width: 100%;
+    height: 45px;
+    border: 1px solid rgb(165, 164, 164);
+    line-height: 45px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.form-container form input[type=text]:focus{
+    outline: 0;
+    font-family: "radjdhani";
+    font-size: 16px; 
+}
+
+.form-container form input[type=email]{
+    width: 100%;
+    height: 45px;
+    border: 1px solid rgb(165, 164, 164);
+    line-height: 45px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.form-container form input[type=email]:focus{
+    outline: 0;
+    font-family: "radjdhani"; 
+    font-size: 16px;
+}
+.form-container form input[type=tel]{
+    width: 100%;
+    height: 45px;
+    border: 1px solid rgb(165, 164, 164);
+    line-height: 45px;
+    padding-left: 10px;
+    margin-top: 2px;
+    font-size: 16px;
+}
+
+.form-container form input[type=tel]:focus{
+    outline: 0;
+    font-family: "radjdhani"; 
+    font-size: 16px;
+}
+.form-container form input[type=submit]{
+    width: 70%;
+    height: 45px;
+    border: 1px solid rgb(165, 164, 164);
+    line-height: 45px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 47px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-family: "radjdhani";
+}
+
+.form-container form input[type=submit]:focus{
+    outline: 0;
+    font-family: "radjdhani"; 
+    border: 2px solid rgb(128, 126, 126);
+    font-size: 18px;
+}
+
+.form-container form p{
+    font-size: 18px;
+    color: rgb(163, 161, 161);
+    font-family: "radjdhani";
+    
+}
+
+.form-wrapper{
+    margin: 9px
+}
+
+section.chamada div.container{
+    background-color: rgb(218, 213, 218);
+    padding: 40px 0 30px 0;
+}
+
+section.chamada{
+    text-align: center;
+    
+}
+
+section.chamada h2{
+  font-size: 38px;
+  font-weight: normal;
+  font-family: 'dancing';
+  color: white;
+  font-style: italic;
+  text-shadow: black 2px 2px;
+
+}
+
+section.chamada p{
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 10px;
+    
+}
+.flex-mosaico{
+    display: flex;
+}
+
+.item1-mosaico{
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+    transition: 2s;
+}
+
+
+.item1-mosaico-texto{
+    width: 30%;
+    padding: 40px 20px;
+    margin: 0 20px;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(53, 48, 58);
+    text-shadow: rgb(179, 174, 174) 2px 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.mosaico div.container{
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px){
+    .item1-mosaico{
+        width: 100%;
+        padding-top: 70%;
+        overflow: hidden;
+    }
+
+    .item1-mosaico-texto{
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        background-color: rgb(245, 247, 247);
+        margin-top: 10px;
+        padding-right: 40px;
+        margin-right: 10px;
+    }
+
+    .flex-mosaico{
+        display: block;
+        overflow: hidden;
+    }
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(225, 228, 228);
+    padding: 20px 0;
+}
+
+footer p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    color: rgb(75, 76, 77);
+}
